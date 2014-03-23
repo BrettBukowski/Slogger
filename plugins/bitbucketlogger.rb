@@ -103,7 +103,7 @@ class BitbucketLogger < Slogger
       activity.map do |repo|
         "* [#{repo[:name]}](#{repo[:href]})\n" +
         repo[:commits].map { |commit| "    * #{commit}" }.join("\n")
-      end.join("\n") + config['bitbucket_tags']
+      end.join("\n") + "\n\n#{config['bitbucket_tags']}"
 
       DayOne.new.to_dayone({ 'content' => entry })
     end
