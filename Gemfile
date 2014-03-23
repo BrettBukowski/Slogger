@@ -5,7 +5,7 @@ gem 'twitter', '~> 5.3.0'
 gem 'twitter_oauth'
 gem 'json'
 gem 'levenshtein'
-
+gem 'oauth'
 gem 'nokogiri'
 
 group :test do
